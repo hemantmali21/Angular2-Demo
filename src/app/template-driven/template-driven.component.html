@@ -1,0 +1,23 @@
+<div class="container">
+  <form class="col-sm-3" (ngSubmit)="saveUser()" #form="ngForm">
+    <div class="form-group" [ngClass]="{'has-error':!name.valid && !name.pristine}">
+      <label>Name</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="user.name" required #name="ngModel">
+      <span class="help-block" *ngIf="!name.valid && !name.pristine">
+        Name is required
+      </span>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error':!city.valid && !city.pristine}">
+      <label>City</label>
+      <input type="text" class="form-control" name="city" [(ngModel)]="user.city" #city="ngModel">
+      <span class="help-block" *ngIf="!city.valid && !city.pristine">
+        City is required
+      </span>
+    </div>
+
+   <!-- <div class="form-group">
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Save</button>
+    </div>-->
+    <app-okbutton [type]="submit"></app-okbutton>
+  </form>
+</div>
