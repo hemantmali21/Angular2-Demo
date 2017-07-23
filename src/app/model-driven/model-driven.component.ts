@@ -12,6 +12,8 @@ export class ModelDrivenComponent implements OnInit {
   nameError: string;
   cityError: string;
 
+  disabled: boolean = false;
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
@@ -21,10 +23,13 @@ export class ModelDrivenComponent implements OnInit {
          city: new FormControl('')
      });*/
 
+
+
     this.buildForm();
 
     // watch for changes and validate
-    this.form.valueChanges.subscribe(data => {this.validateForm()});
+    this.form.valueChanges.subscribe(data => { this.validateForm() });
+//     this.isDisabled();
   }
 
   buildForm() {
@@ -38,8 +43,8 @@ export class ModelDrivenComponent implements OnInit {
   }
   validateForm() {
     // validate each field
-     this.nameError = '';
-     this.cityError = '';
+    this.nameError = '';
+    this.cityError = '';
     let name = this.form.get('name');
     let city = this.form.get('city');
 
@@ -54,5 +59,11 @@ export class ModelDrivenComponent implements OnInit {
   saveUser() {
     console.log('save user', this.form.value);
 
+  }
+
+  isDisabled() {
+    if (this.form.valid) {
+      this.disabled = false;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 export class User {
   name: string;
@@ -13,6 +13,7 @@ export class User {
 })
 export class TemplateDrivenComponent implements OnInit {
   user: User;
+  @Input() disabled: boolean;
   constructor() { }
 
   ngOnInit() {
