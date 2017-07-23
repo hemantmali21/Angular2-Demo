@@ -7,7 +7,7 @@ import {FormGroup, FormControl} from '@angular/forms';
   <div class="form-group">
   <button
     type= "type || button" class="btn btn-primary" (click)="onClickEvent.emit($event)"
-    disabled= "false">
+    [disabled]= "disabled">
           Save
   </button>
   </div>
@@ -26,12 +26,5 @@ export class OkbuttonComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   // this.isDisabled();
   }
-
- /* isDisabled() {
-      if (this.form.valid) {
-          this.disabled = false;
-      }
-  }*/
 }
