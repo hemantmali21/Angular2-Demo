@@ -1,19 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import {OkbuttonComponent} from './okbutton/okbutton.component';
+import { ModelDrivenComponent } from './model-driven/model-driven.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateDrivenComponent,
-    OkbuttonComponent
+    OkbuttonComponent,
+    ModelDrivenComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
