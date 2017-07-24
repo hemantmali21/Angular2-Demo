@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OkbuttonComponent } from './okbutton.component';
+import { SaveButtonComponent } from './save-button.component';
 
-describe('OkbuttonComponent', () => {
-  let component: OkbuttonComponent;
-  let fixture: ComponentFixture<OkbuttonComponent>;
+describe('SaveButtonComponent', () => {
+  let component: SaveButtonComponent;
+  let fixture: ComponentFixture<SaveButtonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OkbuttonComponent ]
+      declarations: [ SaveButtonComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OkbuttonComponent);
+    fixture = TestBed.createComponent(SaveButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
