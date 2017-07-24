@@ -2,7 +2,7 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
 
 @Component({
-  selector: 'app-okbutton',
+  selector: 'app-save-button',
   template: `
   <div class="form-group">
   <button
