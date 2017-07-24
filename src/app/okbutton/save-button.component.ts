@@ -14,7 +14,7 @@ import {FormGroup, FormControl} from '@angular/forms';
   `,
   styleUrls: []
 })
-export class OkbuttonComponent implements OnInit {
+export class SaveButtonComponent implements OnInit {
 
   @Input() className: string;
   @Input() type: string;
