@@ -1,19 +1,6 @@
 
-/*
-onSubmit() {
-//validations
-this.form.updateValueAndValidity();
-if (this.form.invalid) {
-  Object.keys(this.form.controls).forEach(key => {
-    this.form.get(key).markAsDirty();
-  });
-  return;
-}
-
-//call function for saving data
-this.save(this.form.value);
-}       http://plnkr.co/edit/HzZsf1DEbRTcwSyzyStu?p=preview
-*/
+# https://stackoverflow.com/questions/35169258/showing-an-error-message-on-form-submit-in-angular2
+# http://plnkr.co/edit/HzZsf1DEbRTcwSyzyStu?p=preview
 
 # DemoProject
 
