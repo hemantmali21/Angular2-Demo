@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="btn-group pull-right">
+    <button *ngIf="saveRequired" type="submit" class="btn btn-primary pull-right"
+          style="margin-left:0.3em">Save</button>
+
+    <button *ngIf="cancelRequired" type="button" class="btn btn-warning pull-right"
+         (click)="resetButtonClick()" style="margin-left:0.3em">Cancel</button>
+
+    <button *ngIf="backRequired" type="button" class="btn btn-primary pull-right" 
+         (click)="backButtonClick()" style="margin-left:0.3em">Back</button>
+
+    <button *ngIf="insertRequired" type="button" class="btn btn-primary" 
+         (click)="insertButtonClick()" style="margin-left:0.3em">Insert</button>
+
+    <button *ngIf="editRequired" type="button" class="btn btn-primary" 
+        (click)="editButtonClick()" style="margin-left:0.3em">Edit</button>
+  </div>
+</div>

@@ -8,6 +8,34 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 })
 export class ModelDrivenComponent implements OnInit {
 
+
+  clearForm() {
+    this.form.reset()
+  }
+
+  backPageCalled() {
+     console.log('back button clicked')
+  }
+
+ insertCalled() {
+   console.log('insert called')
+ }
+
+ editButtonCalled() {
+   console.log('edit button called');
+ }
+
+
+
+
+
+
+
+
+
+
+
+
   form: FormGroup;
   nameError: string;
   cityError: string;
@@ -52,4 +80,6 @@ export class ModelDrivenComponent implements OnInit {
     console.log('save user', this.form.value);
 
   }
+
+
 }

@@ -14,10 +14,10 @@
         {{cityError}}
       </span>
     </div>
-
-<!--    <div class="form-group">
-      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Save</button>
-    </div>-->
-    <app-okbutton [type]="submit" [disabled] = "!form.valid"></app-okbutton>
+    <form-actions [saveRequired]="true" [backRequired]="true" [insertRequired]="true" [editRequired]="true" [cancelRequired]="true"
+       (onReset)="clearForm()"
+       (onBack)="backPageCalled()" 
+       (onInsert) = "insertCalled()"
+       (onEdit)="editButtonCalled()"></form-actions>
   </form>
 </div>
