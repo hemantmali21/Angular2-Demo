@@ -1,4 +1,4 @@
-
+#https://github.com/valor-software/ng2-table/issues/418 
 # https://stackoverflow.com/questions/35169258/showing-an-error-message-on-form-submit-in-angular2
 # http://plnkr.co/edit/HzZsf1DEbRTcwSyzyStu?p=preview
 
