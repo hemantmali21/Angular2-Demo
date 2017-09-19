@@ -6,6 +6,10 @@
 
 #https://stackoverflow.com/questions/46306131/bind-xml-response-to-html-in-angular2
 
+#https://www.npmjs.com/package/xml2js
+
+#https://stackoverflow.com/questions/43556625/angular2-get-xml-data-and-convert-it-to-json
+
 # DemoProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
